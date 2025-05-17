@@ -26,6 +26,36 @@ The Caesar Cipher is one of the oldest encryption techniques, used by Julius Cae
 
 ## Installation
 1. Clone repository:
-```bash
-git clone https://github.com/yourusername/caesar-cipher-tool.git
+```bash 
+git clone https://github.com/AdityaSomasagar/Encryption-and-decryption-tool.git
 cd caesar-cipher-tool
+
+## Usage <a name="usage"></a>
+
+### Text Encryption/Decryption
+1. **Input Text**: Type or paste text into the input area  
+2. **Set Shift Key**: Enter an integer between 1-25 in the shift field  
+3. **Choose Operation**:  
+   - Click **"Encrypt"** to encode text  
+   - Click **"Decrypt"** to decode text  
+4. **View Results**: Encrypted/decrypted text appears in the output area  
+
+### File Operations
+1. **Add Files**:  
+   - Drag-and-drop `.txt` or `.docx` files into the interface  
+   - **OR** click **"Browse File"** to select manually  
+2. **Set Shift Key**: Enter a valid integer (1-25)  
+3. **Process File**:  
+   - Click **"Encrypt"** or **"Decrypt"**  
+4. **Save Output**:  
+   - Choose a save location via the file dialog  
+   - Processed files retain original formatting (for `.docx`)  
+
+### Shift Key Rules  
+| Scenario          | Behavior                          |  
+|--------------------|-----------------------------------|  
+| Shift = 0          | Rejected (invalid)                |  
+| Shift > 25         | Auto-adjusted via `mod 26`        |  
+| Non-integer input  | Error message displayed           |  
+
+---
